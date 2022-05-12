@@ -1,0 +1,205 @@
+/*Définition de la police*/
+@font-face {
+    font-family: 'ambleregular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#bloc_page
+{
+	width: 1750px; 
+	height: 2045px;
+	font-family: "ambleregular",Impact, "Arial Black", Arial, Verdana, sans-serif; /*J'applique la police "ambleregular" sur la page entière ou une des suivantes*/
+	margin: auto; /*Centre le bloc sur la page*/
+}
+
+
+header
+{
+	height: 670px;
+	background-color: #7452EB; 
+	color: white; 
+	display: flex; 
+	align-items: flex-end;
+}
+
+#presentation
+{
+	margin-left: 200px; 
+	margin-bottom: 240px; 
+	width: 650px; 
+	height: 300px;
+	margin-right: 50px;
+}
+
+#nom-et-metier
+{
+	width: 360px; 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
+}
+
+#nom
+{
+	font-size: 3em; 
+	margin-bottom: 0px;
+}
+
+#metier
+{
+	width: 290px; 
+	margin-top: 0px; 
+	text-align: center; 
+	font-size: 2.2em ; 
+	background-color: #0DEDA3; 
+	padding-bottom: 4px; 
+	color: #003768; 
+}
+
+#introduction
+{
+	font-size: 1.6em; 
+	margin-bottom: 400px;
+	margin-top: 50px;
+}
+
+#photo
+{
+	margin-bottom: 0px; 
+	padding-bottom: 0px;
+}
+
+
+section
+{
+	height: 790px; 
+	display: flex;
+}
+
+#java 
+{
+	display: flex; 
+	align-items: center;
+}
+
+#resume
+{
+	height: 750px; 
+	width: 1100px; 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	font-size: 1.9em; 
+	color: #003668;
+}
+
+#competences
+{
+	background-color: #0DEDA3; 
+	width: 400px; 
+	margin-top: 155px; 
+	font-size: 1.5em; 
+	margin-bottom: 0px;
+}
+
+#modification-mes
+{
+	background-color: white;
+}
+
+#description
+{
+	margin-bottom: 130px;
+}
+
+
+footer
+{
+	background-color: #003668; 
+	color: white; 
+	font-size: 2em; 
+	height : 575px; 
+	display: flex; 
+	flex-direction: column;
+}
+
+
+#phrase-de-contact
+{
+	margin-top: 155px; 
+	margin-left: 170px;
+}
+
+#retrouvez-moi
+{
+	font-size: 1.8em; 
+	font-weight: bold;
+}
+
+#idee-de-projet
+{
+	background-color: #0DEDA3; 
+	color: #003668;
+}
+
+#contacts
+{
+	display: flex; 
+	margin-top: 30px; 
+	margin-left: 170px;
+}
+
+.contact
+{
+	margin-left: 40px; 
+}
+
+
+
+
+
+/*Regles media query*/ /*Pour ecran mobile*/
+@media all and (max-device-width: 480px)
+{
+
+	#bloc_page
+	{
+		width: 800px;
+		margin: auto;
+	}
+
+	header
+	{
+		flex-wrap: wrap; 
+		height: auto; 
+		justify-content: center;
+	}
+
+	section
+	{
+		flex-wrap: wrap; 
+		height: auto; 
+		justify-content: center;
+	}
+
+	#resume
+	{
+		align-items: center;
+	}
+
+
+	#phrase-de-contact
+	{
+		margin-left: 0px;
+	}
+
+}
